@@ -97,13 +97,13 @@ a {
 }
 
 main {
-  background-image: url(../images/banner.jpeg);
+  background-image: url(../images/bannerblocos-transformed.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   color: white;
-  text-shadow: #070707 2px 2px 2px;
+  text-shadow: #070707 10px 10px 10px;
   min-height: 120vh;
   flex-direction: column;
   justify-content: center;
@@ -145,9 +145,11 @@ section#budget {
   align-items: center;
   display: grid;
 }
+
 section#budget h2 {
   font-size: 2.4rem;
 }
+
 section#budget a.btn {
   background-color: white;
   font-size: 1rem;
@@ -191,7 +193,7 @@ section#services .card-section .card {
   background-color: transparent;
   width: 35vw;
   min-height: 75vh;
-  border: 1px solid rgb(236, 236, 236);
+  border: 1px solid rgb(149 144 144);
   flex-direction: column;
   align-items: center;
   display: flex;
@@ -498,13 +500,17 @@ footer {
   #menu a hr {
     display: none;
   }
+  main {
+    min-height: 75vh;
+  }
+  
   main h1 {
     width: 80%;
     font-size: 3rem;
     text-align: center;
   }
   section#budget {
-    min-height: 60vh;
+    min-height: 30vh;
     justify-items: center;
     justify-content: center;
     grid-template-columns: 1fr;
@@ -513,8 +519,16 @@ footer {
   section#budget h2 {
     width: 100%;
     font-size: 2rem;
+    padding-left: 50px;
+    margin-top: 2vh;
   }
+
+  section#budget div.btn {
+    margin-bottom: 5vh;
+  }
+
   section#budget .services-category {
+    grid-template-columns: 1.2fr 1fr;
     justify-items: center;
   }
   section#services .card-section {
@@ -535,7 +549,7 @@ footer {
   }
   section#maps {
     min-height: 0vh;
-    margin-top: 15%;
+    margin-top: -5%;
   }
   section#about .about-grid {
     height: 100%;
