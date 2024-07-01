@@ -502,6 +502,7 @@ footer {
   }
   main {
     min-height: 75vh;
+    background-image: url(../images/banner\ 2.jpeg);
   }
   
   main h1 {
