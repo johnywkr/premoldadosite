@@ -33,12 +33,12 @@ html {
   height: 90px;
   padding-left: 5% ;
   padding-right: 5%;
-  padding-top: 0.5rem;
+  padding-top: 0rem;
   box-sizing: border-box;
   align-items: center;
   justify-content: space-between;
   display: flex;
-  position: fixed;
+  position: 0;
 }
 
 #menu {
@@ -97,11 +97,11 @@ a {
 }
 
 main {
-  background-image: url(../images/banner.jpeg);
+  background-image: url(../images/bannerDescktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: local;
   color: white;
   text-shadow: #070707 10px 10px 10px;
   min-height: 120vh;
@@ -110,13 +110,29 @@ main {
   align-items: center;
   display: flex;
 }
+
+#home2 {
+  background-image: url(../images/bannerDesktop2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: local;
+  color: white;
+  text-shadow: #070707 10px 10px 10px;
+  min-height: 120vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 main h1 {
   width: 40%;
   font-size: 4rem;
   text-align: center;
 }
 main .more {
-  background-color: #fffffec0;
+  background-color: rgb(255 49 49);
   color: rgb(10, 8, 8);
   border: none;
   text-shadow: none ;
@@ -137,7 +153,7 @@ section {
 }
 
 section#budget {
-  background-color: rgba(0, 0, 0, 0.822);
+  background-color: rgb(255 49 49);
   color: white;
   min-height: 50vh;
   grid-template-columns: 1fr 1fr;
@@ -501,8 +517,13 @@ footer {
     display: none;
   }
   main {
-    min-height: 75vh;
-    background-image: url(../images/banner\ 2.jpeg);
+    min-height: 62vh;
+    background-image: url(../images/bannerMobile.jpeg);
+  }
+
+  #home2 {
+    min-height: 62vh;
+    background-image: url(../images/bannerMobile2.jpg);
   }
   
   main h1 {
